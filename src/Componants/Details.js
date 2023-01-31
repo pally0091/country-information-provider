@@ -6,7 +6,7 @@ const Details = () => {
     console.log(details)
     return (
         <div className='mt-16'>
-            <h1>Details</h1>
+            <h1>{details[0].name.common}</h1>
         </div>
     );
 };
