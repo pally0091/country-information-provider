@@ -5,8 +5,8 @@ const Details = () => {
     const details = useLoaderData();
     console.log(details)
     return (
-        <div>
-            <h1>Details info</h1>
+        <div className='mt-16'>
+            <h1>Details</h1>
         </div>
     );
 };
