@@ -3,7 +3,7 @@ import { Typewriter } from "react-simple-typewriter";
 
 const About = () => {
   return (
-    <div className=" bg-gray-200 flex flex-row items-center p-2 lg:w-8/12 sm:w-[95%] mx-auto h-96 mt-48 mb-40 rounded-lg border-2 border-black ">
+    <div className=" bg-gray-200 text-black flex flex-row items-center p-2 lg:w-8/12 sm:w-[95%] mx-auto h-96 mt-48 mb-40 rounded-lg border-2 border-black ">
       <div className="w-full text-center p-6">
         <h1 className="text-4xl font-bold">Debashis Roy</h1>
         <p className="font-bold">
@@ -28,7 +28,7 @@ const About = () => {
         <p className="text-lg mt-3">
           👀 I’m interested in Web design and devolopment.
           <br />
-          🌱 I’m currently learning React,
+          🌱 I’m capable to work with React,
           <br />
           💞️ I’m looking to collaborate on anythings related.
           </p> <br></br>
