@@ -42,7 +42,7 @@ const Details = () => {
           ></img>
           <p className="my-2">Coat Of Arms</p>
         </div>
-        <div className="lg:w-2/3 sm:w-full p-5 px-24 text-justify">
+        <div className="lg:w-2/3 sm:w-full mt-5 p-5 lg:px-24 sm:px-0 text-justify">
           <h5 className="text-lg font-bold">
             Location :{" "}
             <a
