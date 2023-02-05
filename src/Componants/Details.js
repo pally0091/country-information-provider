@@ -1,12 +1,15 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
+import Footer from "./Footer";
 
 const Details = () => {
   const details = useLoaderData();
   console.log(details);
   return (
     <div className="mt-12">
-      <h1 className="mb-2 text-4xl font-extrabold">{details[0].name.common}</h1>
+      <h1 className="mb-2 text-4xl font-extrabold">
+        {details[0]?.name?.common}
+      </h1>
       <div className=" my-2 w-[80%]  mx-auto border rounded-lg p-5 justify-between align-middle lg:flex lg:flex-row md:flex md:flex-row sm:flex sm:flex-col">
         <div
           className="lg:w-1/3 sm:w-full"
@@ -27,17 +30,17 @@ const Details = () => {
           <p>Status : {details[0].status}</p>
         </div>
       </div>
-      <div className="my-2 w-[80%] mx-auto border rounded-lg p-5 justify-between align-middle lg:flex lg:flex-row md:flex md:flex-row sm:flex sm:flex-col">
+      <div className="my-5 w-[80%] h-80 mx-auto border rounded-lg p-5 justify-between align-middle lg:flex lg:flex-row md:flex md:flex-row sm:flex sm:flex-col">
         <div
-          className="lg:w-1/3 sm:w-full"
+          className="lg:w-1/3 sm:w-full h-64 bg-white"
           mx-auto
         >
-          <p className="my-2">Coat Of Arms</p>
           <img
-            className="w-full "
+            className="w-full h-full"
             src={details[0].coatOfArms.png}
             alt=""
           ></img>
+          <p className="my-2">Coat Of Arms</p>
         </div>
         <div className="lg:w-2/3 sm:w-full p-5 px-24 text-justify">
           <h5 className="text-lg font-bold">
@@ -50,8 +53,14 @@ const Details = () => {
               Google Map
             </a>
           </h5>
+          <p className="my-3">Time Zone : {details[0].timezones}</p>
+          <p className="my-3">
+            Population : <span className="text-red-500">{details[0].population}</span>
+          </p>
+          <p className="my-3">Week starts on : {details[0].startOfWeek}</p>
         </div>
       </div>
+      <Footer></Footer>
     </div>
   );
 };

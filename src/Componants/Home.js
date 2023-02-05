@@ -12,7 +12,7 @@ const Home = () => {
     return (
       <div className=" mt-20">
         <h1 className="my-5 text-xl font-bold">
-          There is <span className='text-red-600 font-extrabold'>{countries.length}</span> countries in the World
+          There are <span className='text-red-600 font-extrabold'>{countries.length}</span> countries in the World
         </h1>
         <div className="lg:flex lg:flex-row md:flex md:flex-row sm:flex sm:flex-col flex-wrap mx-10 justify-between">
           {countries.map((country) => (
