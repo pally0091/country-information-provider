@@ -30,7 +30,7 @@ const Details = () => {
           <p>Status : {details[0].status}</p>
         </div>
       </div>
-      <div className="my-5 w-[80%] h-80 mx-auto border rounded-lg p-5 justify-between align-middle lg:flex lg:flex-row md:flex md:flex-row sm:flex sm:flex-col">
+      <div className="my-5 w-[80%] lg:h-80 sm:h-auto mx-auto border rounded-lg p-5 justify-between align-middle lg:flex lg:flex-row md:flex md:flex-row sm:flex sm:flex-col">
         <div
           className="lg:w-1/3 sm:w-full h-64 bg-white"
           mx-auto
